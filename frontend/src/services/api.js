@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://ai-assistant-3q33.onrender.com/api';
 
 export async function sendMessage(sessionId, message) {
   const response = await fetch(`${API_BASE}/chat`, {
